@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MiniCraft – Smooth & Fast Edition</title>
+  <title>VoxelWorld – Build Your Own World (Beta Version)</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rajdhani:wght@400;600;700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rajdhani:wght@400;600;700&family=Orbitron:wght@400;700;900&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
   <!-- ░░ CURSOR ░░ -->
@@ -25,22 +29,33 @@
         <div class="lb lb4"></div>
       </div>
       <p class="loader-text">Loading World<span class="dots"></span></p>
-      <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
+      <div class="loader-bar-wrap">
+        <div class="loader-bar"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ░░ MOBILE BLOCKER ░░ -->
+  <div id="mobile-blocker">
+    <div class="blocker-dialog">
+      <h2>⚠️ SORRY!</h2>
+      <p>This is a PC game. Please open this website on a desktop or laptop computer to download and play VoxelWorld.
+      </p>
     </div>
   </div>
 
   <!-- ░░ NAV ░░ -->
   <nav class="navbar" id="navbar">
     <div class="nav-logo">
-      <span class="logo-pixel">Mini</span><span class="logo-gold">Craft</span>
+      <span class="logo-pixel">Voxel</span><span class="logo-gold">World</span>
+      <span class="nav-beta-tag">BETA v1.0</span>
     </div>
     <ul class="nav-links">
-      <li><a href="#features" class="nav-link">Features</a></li>
-      <li><a href="#gameplay" class="nav-link">Gameplay</a></li>
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#beta" class="nav-link">Beta &amp; Roadmap</a></li>
       <li><a href="#controls" class="nav-link">Controls</a></li>
       <li><a href="#download" class="nav-link">Download</a></li>
     </ul>
-    <a href="#download" class="nav-cta">GET GAME</a>
     <button class="hamburger" id="hamburger" aria-label="Menu">
       <span></span><span></span><span></span>
     </button>
@@ -52,62 +67,27 @@
     <div class="hero-particles" id="heroParticles"></div>
 
     <div class="hero-content">
-      <div class="hero-badge">🎮 FREE TO PLAY</div>
-      <h1 class="hero-title">
-        <span class="ht-line1">MINI</span>
-        <span class="ht-line2">CRAFT</span>
-      </h1>
-      <p class="hero-edition">SMOOTH &amp; FAST EDITION</p>
-      <p class="hero-desc">
-        Build. Explore. Conquer.<br/>
-        A voxel world that runs at silky <span class="highlight">60 FPS</span>
-        with <span class="highlight">7 block types</span>,
-        an open lobby world, and a thrilling parkour level.
-      </p>
-
-      <div class="hero-stats">
-        <div class="stat-item">
-          <span class="stat-num" data-target="7">0</span>
-          <span class="stat-label">Block Types</span>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat-item">
-          <span class="stat-num" data-target="60">0</span>
-          <span class="stat-label">FPS Target</span>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat-item">
-          <span class="stat-num" data-target="25">0</span>
-          <span class="stat-label">World Size</span>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat-item">
-          <span class="stat-num" data-target="20">0</span>
-          <span class="stat-label">Platforms</span>
-        </div>
+      <div class="beta-notice-pill">
+        <span class="beta-dot"></span>
+        <span class="beta-pill-title">BETA VERSION 1.0</span>
+        <span class="beta-pill-text">— More Advanced Features Coming Soon!</span>
       </div>
+
+      <h1 class="hero-title">
+        <span class="ht-line1">VOXEL</span>
+        <span class="ht-line2">WORLD</span>
+      </h1>
+
+      <p class="hero-tagline">BUILD YOUR OWN WORLD</p>
 
       <div class="hero-actions">
         <a href="#download" class="btn-primary">
-          <span class="btn-icon">⬇</span>
-          <span class="btn-text">Download Free</span>
-          <span class="btn-glow"></span>
+          <span class="btn-icon"></span>
+          <span class="btn-text">Download Free (Beta)</span>
         </a>
-        <a href="#gameplay" class="btn-secondary">
-          <span>View Gameplay</span>
-          <span class="arrow">→</span>
+        <a href="#beta" class="btn-secondary">
+          <span class="btn-text">Upcoming Features</span>
         </a>
-      </div>
-    </div>
-
-    <!-- 3D Block showcase -->
-    <div class="hero-scene">
-      <div class="block-world">
-        <div class="block b-grass"><span>G</span></div>
-        <div class="block b-dirt"><span>D</span></div>
-        <div class="block b-stone"><span>S</span></div>
-        <div class="block b-wood"><span>W</span></div>
-        <div class="block b-gold"><span>★</span></div>
       </div>
     </div>
 
@@ -120,6 +100,9 @@
   <!-- ░░ MARQUEE ░░ -->
   <div class="marquee-wrap">
     <div class="marquee-track">
+      <span>🚀 BETA VERSION 1.0</span>
+      <span>🎮 VOXELWORLD &rarr; BUILD YOUR OWN WORLD</span>
+      <span>✨ ADVANCED FEATURES COMING SOON</span>
       <span>🧱 PLACE BLOCKS</span>
       <span>⛏ BREAK TERRAIN</span>
       <span>🏃 PARKOUR LEVEL</span>
@@ -128,245 +111,14 @@
       <span>⚡ 60 FPS</span>
       <span>🎮 FREE TO PLAY</span>
       <span>📦 ONE-CLICK EXE</span>
+      <span>🚀 BETA VERSION 1.0</span>
+      <span>🎮 VOXELWORLD &rarr; BUILD YOUR OWN WORLD</span>
+      <span>✨ ADVANCED FEATURES COMING SOON</span>
       <span>🧱 PLACE BLOCKS</span>
       <span>⛏ BREAK TERRAIN</span>
-      <span>🏃 PARKOUR LEVEL</span>
-      <span>🏰 STONE CASTLE</span>
-      <span>🌍 OPEN WORLD</span>
-      <span>⚡ 60 FPS</span>
-      <span>🎮 FREE TO PLAY</span>
-      <span>📦 ONE-CLICK EXE</span>
     </div>
   </div>
 
-  <!-- ░░ FEATURES ░░ -->
-  <section id="features" class="section">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">WHAT'S INSIDE</span>
-        <h2 class="section-title">Game <span class="gold">Features</span></h2>
-        <p class="section-sub">Everything you need for a great voxel experience</p>
-      </div>
-
-      <div class="features-grid">
-
-        <div class="feat-card glass reveal" style="--delay:0s">
-          <div class="feat-glow glow-green"></div>
-          <div class="feat-top">
-            <div class="feat-icon-wrap green-bg">
-              <span class="feat-icon">🧱</span>
-            </div>
-            <span class="feat-tag">BUILDING</span>
-          </div>
-          <h3>7 Block Types</h3>
-          <p>Grass, Dirt, Stone, Wood, Sand, Leaves, Brick. Press 1–7 to swap instantly.</p>
-          <div class="block-palette">
-            <div class="bp bp-grass" title="Grass"></div>
-            <div class="bp bp-dirt" title="Dirt"></div>
-            <div class="bp bp-stone" title="Stone"></div>
-            <div class="bp bp-wood" title="Wood"></div>
-            <div class="bp bp-sand" title="Sand"></div>
-            <div class="bp bp-leaves" title="Leaves"></div>
-            <div class="bp bp-brick" title="Brick"></div>
-          </div>
-        </div>
-
-        <div class="feat-card glass reveal" style="--delay:0.1s">
-          <div class="feat-glow glow-blue"></div>
-          <div class="feat-top">
-            <div class="feat-icon-wrap blue-bg">
-              <span class="feat-icon">⚡</span>
-            </div>
-            <span class="feat-tag">PERFORMANCE</span>
-          </div>
-          <h3>Silky 60 FPS</h3>
-          <p>VSync enabled, no heavy shaders, optimised lighting. Runs smooth on any PC.</p>
-          <div class="fps-bar">
-            <div class="fps-fill" data-width="95"></div>
-            <span>Performance Score</span>
-          </div>
-        </div>
-
-        <div class="feat-card glass reveal" style="--delay:0.2s">
-          <div class="feat-glow glow-gold"></div>
-          <div class="feat-top">
-            <div class="feat-icon-wrap gold-bg">
-              <span class="feat-icon">🌍</span>
-            </div>
-            <span class="feat-tag">WORLD</span>
-          </div>
-          <h3>Open Lobby</h3>
-          <p>25×25 terrain with a dirt mountain, stone castle, and trees auto-placed.</p>
-          <div class="mini-map">
-            <div class="mm-grass"></div>
-            <div class="mm-castle"></div>
-            <div class="mm-mountain"></div>
-            <span class="mm-label">LOBBY MAP</span>
-          </div>
-        </div>
-
-        <div class="feat-card glass reveal" style="--delay:0.3s">
-          <div class="feat-glow glow-red"></div>
-          <div class="feat-top">
-            <div class="feat-icon-wrap red-bg">
-              <span class="feat-icon">🏃</span>
-            </div>
-            <span class="feat-tag">CHALLENGE</span>
-          </div>
-          <h3>Parkour Level</h3>
-          <p>20 platforms, wrong ones collapse under you. Reach the gold block to win!</p>
-          <div class="parkour-preview">
-            <div class="pk-plat right"></div>
-            <div class="pk-plat left wrong"></div>
-            <div class="pk-plat right"></div>
-            <div class="pk-goal">★</div>
-          </div>
-        </div>
-
-        <div class="feat-card glass reveal" style="--delay:0.4s">
-          <div class="feat-glow glow-purple"></div>
-          <div class="feat-top">
-            <div class="feat-icon-wrap purple-bg">
-              <span class="feat-icon">📦</span>
-            </div>
-            <span class="feat-tag">INSTALL</span>
-          </div>
-          <h3>One-Click EXE</h3>
-          <p>No Python. No setup. Download the ZIP, extract, double-click — done.</p>
-          <div class="steps-mini">
-            <span>① Download</span>
-            <span class="steps-arrow">→</span>
-            <span>② Extract</span>
-            <span class="steps-arrow">→</span>
-            <span>③ Play</span>
-          </div>
-        </div>
-
-        <div class="feat-card glass reveal" style="--delay:0.5s">
-          <div class="feat-glow glow-cyan"></div>
-          <div class="feat-top">
-            <div class="feat-icon-wrap cyan-bg">
-              <span class="feat-icon">🎮</span>
-            </div>
-            <span class="feat-tag">CONTROLS</span>
-          </div>
-          <h3>Easy Controls</h3>
-          <p>Standard FPS controls. Pick up and play in under 30 seconds, no tutorial needed.</p>
-          <div class="wasd-keys">
-            <div class="wasd-row"><div class="wk">W</div></div>
-            <div class="wasd-row">
-              <div class="wk">A</div>
-              <div class="wk">S</div>
-              <div class="wk">D</div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ░░ GAMEPLAY / BLOCK SHOWCASE ░░ -->
-  <section id="gameplay" class="section gameplay-section">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">GAME MODES</span>
-        <h2 class="section-title">How To <span class="gold">Play</span></h2>
-      </div>
-
-      <div class="gameplay-tabs">
-        <button class="tab-btn active" data-tab="lobby">🌍 Lobby</button>
-        <button class="tab-btn" data-tab="parkour">🏃 Parkour</button>
-        <button class="tab-btn" data-tab="build">🧱 Build</button>
-      </div>
-
-      <div class="tab-content active" id="tab-lobby">
-        <div class="tab-layout">
-          <div class="tab-visual lobby-visual">
-            <div class="scene-3d">
-              <div class="scene-ground"></div>
-              <div class="scene-castle">
-                <div class="castle-wall"></div>
-                <div class="castle-wall"></div>
-                <div class="castle-wall"></div>
-                <div class="castle-wall"></div>
-              </div>
-              <div class="scene-mountain"></div>
-              <div class="scene-sky">
-                <div class="cloud c1"></div>
-                <div class="cloud c2"></div>
-              </div>
-            </div>
-          </div>
-          <div class="tab-info">
-            <h3>Open World Lobby</h3>
-            <p>Spawn in a 25×25 world with grass terrain, a dirt mountain in the corner, and a stone castle to explore. Place blocks, break terrain, or just vibe.</p>
-            <ul class="tab-list">
-              <li><span class="tick">✓</span> 30×30 terrain with grass layer</li>
-              <li><span class="tick">✓</span> Stone castle with 4 walls</li>
-              <li><span class="tick">✓</span> Dirt mountain structure</li>
-              <li><span class="tick">✓</span> Full block placing &amp; breaking</li>
-              <li><span class="tick">✓</span> Press <kbd>Ctrl+S</kbd> to enter Level 1</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="tab-content" id="tab-parkour">
-        <div class="tab-layout">
-          <div class="tab-visual parkour-visual">
-            <div class="pk-scene">
-              <div class="pk-platform"></div>
-              <div class="pk-platform falling"></div>
-              <div class="pk-platform"></div>
-              <div class="pk-platform falling"></div>
-              <div class="pk-end">🏆</div>
-            </div>
-          </div>
-          <div class="tab-info">
-            <h3>Parkour Challenge</h3>
-            <p>20 platforms stretch out before you. Wrong platforms collapse the moment you step on them. Only the correct path leads to the gold finish block.</p>
-            <ul class="tab-list">
-              <li><span class="tick">✓</span> 20 platform stages</li>
-              <li><span class="tick">✓</span> Wrong platforms crumble &amp; fade</li>
-              <li><span class="tick">✓</span> Fall → respawn at start</li>
-              <li><span class="tick">✓</span> Reach gold block to win</li>
-              <li><span class="tick">✓</span> Press <kbd>ESC</kbd> to return to lobby</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="tab-content" id="tab-build">
-        <div class="tab-layout">
-          <div class="tab-visual build-visual">
-            <div class="build-scene">
-              <div class="build-row">
-                <div class="bb b-g"></div><div class="bb b-g"></div><div class="bb b-g"></div>
-              </div>
-              <div class="build-row">
-                <div class="bb b-d"></div><div class="bb b-s"></div><div class="bb b-d"></div>
-              </div>
-              <div class="build-row">
-                <div class="bb b-s"></div><div class="bb b-s"></div><div class="bb b-s"></div>
-              </div>
-            </div>
-          </div>
-          <div class="tab-info">
-            <h3>Creative Building</h3>
-            <p>Left-click to place blocks on any surface, right-click to break. Use the hotbar or 1–7 keys to select your material. Build anything you can imagine.</p>
-            <ul class="tab-list">
-              <li><span class="tick">✓</span> 7 material types</li>
-              <li><span class="tick">✓</span> Left click = Place block</li>
-              <li><span class="tick">✓</span> Right click = Break block</li>
-              <li><span class="tick">✓</span> 1–7 hotbar quick-select</li>
-              <li><span class="tick">✓</span> Base layer protected from deletion</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- ░░ CONTROLS ░░ -->
   <section id="controls" class="section controls-section">
@@ -469,14 +221,65 @@
     </div>
   </section>
 
+  <div class="grass-divider"></div>
+
+  <!-- ░░ BETA & ROADMAP SECTION ░░ -->
+  <section id="beta" class="section beta-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">DEVELOPMENT ROADMAP</span>
+        <h2 class="section-title">Beta Version &amp; <span class="gold">Future Updates</span></h2>
+        <p class="section-sub">VoxelWorld is currently in active Beta testing. We are constantly upgrading the engine to bring you more advanced features, smoother performance, and exciting new mechanics!</p>
+      </div>
+
+      <div class="beta-alert-box reveal">
+        <div class="alert-icon">⚡</div>
+        <div class="alert-content">
+          <h3>Notice: You are playing VoxelWorld Beta v1.0</h3>
+          <p>This is an early Beta version focusing on high-speed voxel generation and core building. Our team is actively developing more advanced features, game modes, survival mechanics, and custom options in upcoming updates!</p>
+        </div>
+      </div>
+
+      <div class="roadmap-grid reveal">
+        <!-- Card 1: Available Now in Beta -->
+        <div class="roadmap-card current-beta">
+          <div class="card-badge badge-now">AVAILABLE NOW IN BETA</div>
+          <h3 class="card-title">🎮 Current Beta Features</h3>
+          <ul class="roadmap-list">
+            <li><span class="check-icon">✓</span> <strong>Fast Voxel Engine:</strong> Smooth 60 FPS performance</li>
+            <li><span class="check-icon">✓</span> <strong>Block Building &amp; Breaking:</strong> Full sandbox terraforming</li>
+            <li><span class="check-icon">✓</span> <strong>Multiple Block Types:</strong> Grass, Dirt, Stone, Wood, Brick, Glass &amp; more</li>
+            <li><span class="check-icon">✓</span> <strong>Parkour Challenge Level:</strong> Special action obstacle course</li>
+            <li><span class="check-icon">✓</span> <strong>1-Click Portable Executable:</strong> Double-click and play instantly</li>
+          </ul>
+        </div>
+
+        <!-- Card 2: Future Advanced Features Coming Soon -->
+        <div class="roadmap-card future-features">
+          <div class="card-badge badge-future">COMING SOON IN UPDATES</div>
+          <h3 class="card-title">🔥 Advanced Features Coming Soon</h3>
+          <ul class="roadmap-list">
+            <li><span class="star-icon">★</span> <strong>Multiplayer Co-Op:</strong> Join friends online and build together</li>
+            <li><span class="star-icon">★</span> <strong>Survival &amp; Crafting Mode:</strong> Resources, crafting recipes &amp; mobs</li>
+            <li><span class="star-icon">★</span> <strong>Custom Skins &amp; Textures:</strong> Personalize your character &amp; block styles</li>
+            <li><span class="star-icon">★</span> <strong>Infinite Biomes &amp; Caves:</strong> Procedural world gen &amp; subterranean exploration</li>
+            <li><span class="star-icon">★</span> <strong>Dynamic Weather &amp; Lighting:</strong> Realistic day/night cycles &amp; shadows</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="grass-divider"></div>
+
   <!-- ░░ DOWNLOAD ░░ -->
   <section id="download" class="section download-section">
     <div class="download-bg-anim" id="dlBgAnim"></div>
     <div class="container">
       <div class="section-header">
         <span class="section-tag">100% FREE</span>
-        <h2 class="section-title">Download &amp; <span class="gold">Play</span></h2>
-        <p class="section-sub">No Python. No setup. Just click and play.</p>
+        <h2 class="section-title">Download &amp; <span class="gold">Play Beta</span></h2>
+        <p class="section-sub">No Python. No setup. Just click, extract and play.</p>
       </div>
 
       <div class="dl-card reveal">
@@ -484,25 +287,33 @@
           <div class="dl-left">
             <div class="dl-icon-big">📦</div>
             <div class="dl-info">
-              <h3 class="dl-title">MiniCraft.zip</h3>
+              <h3 class="dl-title">VoxelWorld.zip</h3>
               <p class="dl-meta">Windows 10 / 11 &nbsp;·&nbsp; ~50 MB &nbsp;·&nbsp; Free Forever</p>
               <div class="dl-badges">
-                <span class="badge badge-green">✅ No Install</span>
-                <span class="badge badge-blue">🪟 Windows</span>
+                <span class="badge badge-purple">🧪 Beta Build</span>
+                <span class="badge badge-green">✅ Standalone EXE</span>
                 <span class="badge badge-gold">⚡ Instant Play</span>
               </div>
             </div>
           </div>
           <div class="dl-right">
             <div class="dl-checklist">
-              <div class="dl-check"><span>✓</span><p>Standalone EXE — no Python required</p></div>
-              <div class="dl-check"><span>✓</span><p>Extract ZIP → double-click to run</p></div>
-              <div class="dl-check"><span>✓</span><p>Lobby world + Parkour Level 1 included</p></div>
-              <div class="dl-check"><span>✓</span><p>Full block building &amp; breaking</p></div>
+              <div class="dl-check"><span>✓</span>
+                <p>Standalone EXE — no Python required</p>
+              </div>
+              <div class="dl-check"><span>✓</span>
+                <p>Extract ZIP → double-click to run</p>
+              </div>
+              <div class="dl-check"><span>✓</span>
+                <p>Lobby world + Parkour Level 1 included</p>
+              </div>
+              <div class="dl-check"><span>✓</span>
+                <p>Full block building &amp; breaking</p>
+              </div>
             </div>
             <a href="MineCraft_Game.zip" download class="btn-primary dl-btn" id="dlBtn">
-              <span class="btn-icon">⬇</span>
-              <span class="btn-text">Download MiniCraft.zip</span>
+              <span class="btn-icon"></span>
+              <span class="btn-text">Download VoxelWorld.zip</span>
               <span class="btn-glow"></span>
             </a>
           </div>
@@ -532,7 +343,7 @@
           <div class="step-num">03</div>
           <div class="step-icon">🖱</div>
           <h4>Double-Click</h4>
-          <p>Run <code>MiniCraft.exe</code> inside the folder</p>
+          <p>Run <code>VoxelWorld.exe</code> inside the folder</p>
         </div>
         <div class="step-connector"></div>
         <div class="step">
@@ -549,11 +360,19 @@
   <footer class="footer">
     <div class="footer-inner">
       <div class="footer-logo">
-        <span class="logo-pixel">Mini</span><span class="logo-gold">Craft</span>
+        <span class="logo-pixel">Voxel</span><span class="logo-gold">World</span>
       </div>
-      <p class="footer-tagline">Build. Explore. Conquer.</p>
+      <p class="footer-tagline">VoxelWorld &ndash; Build Your Own World</p>
+      <p class="footer-beta-text">🚀 Beta Version 1.0 &nbsp;·&nbsp; More Advanced Features &amp; Updates Coming Soon!</p>
       <div class="footer-divider"></div>
-      <p class="footer-copy">Made with ❤️ &amp; blocks &nbsp;·&nbsp; MiniCraft © 2025 &nbsp;·&nbsp; Built with Python &amp; Ursina Engine</p>
+      <p class="footer-copy" style="margin-bottom: 12px;">
+        Developed by 
+        <a href="https://vivekx11.in" target="_blank" rel="noopener noreferrer" class="footer-dev-link">vivekx11.in</a> 
+        &nbsp;·&nbsp; 
+        <a href="https://github.com/vivekx11" target="_blank" rel="noopener noreferrer" class="footer-dev-link">GitHub (vivekx11)</a>
+      </p>
+      <p class="footer-copy">Made with ❤️ &amp; blocks &nbsp;·&nbsp; VoxelWorld © 2026 &nbsp;·&nbsp; Built with Python
+        &amp; Ursina Engine</p>
     </div>
     <!-- footer block deco -->
     <div class="footer-blocks">
@@ -569,4 +388,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>
