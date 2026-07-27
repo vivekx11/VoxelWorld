@@ -43,23 +43,6 @@ VoxelWorld/
 
 ---
 
-## 🚀 Getting Started
-
-### 1. Playing the Game
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/vivekx11/VoxelWorld.git
-   ```
-2. Navigate to the `VoxelWorld` directory.
-3. Run **`VoxelWorld.exe`** on your Windows PC to play!
-
-### 2. Running the Showcase Website Locally
-Open `index.html` in any modern desktop browser or start a local server:
-```bash
-python -m http.server 8000
-```
-
----
 
 ## 🗺️ Roadmap & Upcoming Features
 
