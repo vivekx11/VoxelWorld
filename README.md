@@ -15,7 +15,7 @@ Welcome to **VoxelWorld**, an immersive 3D sandbox voxel building PC game! Explo
 
 ---
 
-## 🛠️ Controls
+##  Controls
 
 | Action | Control Key |
 | :--- | :--- |
@@ -29,7 +29,7 @@ Welcome to **VoxelWorld**, an immersive 3D sandbox voxel building PC game! Explo
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 VoxelWorld/
