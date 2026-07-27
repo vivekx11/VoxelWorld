@@ -6,7 +6,7 @@ Welcome to **VoxelWorld**, an immersive 3D sandbox voxel building PC game! Explo
 
 ---
 
-## ✨ Features
+## Features
 
 - **🎮 3D Voxel Engine:** Rich, interactive 3D voxel sandbox environment.
 - **🧱 Building & Crafting:** Place and destroy various voxel block types in real-time.
