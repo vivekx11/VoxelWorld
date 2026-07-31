@@ -4,7 +4,7 @@
 
 /* ── Mobile Blocker Check ── */
 
-// script 
+// script.js 
 const isMobileDevice = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || window.innerWidth < 992;
 if (isMobileDevice) {
   document.body.classList.add('mobile-detected');
