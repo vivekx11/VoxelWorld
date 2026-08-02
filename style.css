@@ -208,6 +208,7 @@ body {
 .nav-links {
   display: flex; list-style: none; gap: 24px;
 }
+/*nav*/
 .nav-link {
   font-family: var(--pixel);
   font-size: 0.65rem;
