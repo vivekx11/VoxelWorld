@@ -146,7 +146,7 @@ function drawTexturedBlock(ctx, size, blockType) {
       ['#a04030', '#a04030', '#602010', '#602010']
     ];
   }
-
+// for div 
   for (let r = 0; r < 4; r++) {
     for (let c = 0; c < 4; c++) {
       ctx.fillStyle = colors[r][c];
