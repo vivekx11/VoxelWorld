@@ -1,6 +1,5 @@
 #  VoxelWorld – Build Your Own World (Beta v1.0)
 _______________________________________________________
---------------------------------------------
 
 ![VoxelWorld Banner](https://img.shields.io/badge/Version-v1.0--Beta-green?style=for-the-badge) ![Platform](https://img.shields.io/badge/Platform-Windows%20PC-blue?style=for-the-badge) ![License](https://img.shields.io/badge/License-MIT-orange?style=for-the-badge)
 
